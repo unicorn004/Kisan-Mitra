@@ -30,3 +30,6 @@ def create_profile(request):
 
 def estore(request):
     return render(request, 'estore.html')
+
+def rice(request):
+    return render(request, 'rice.html')

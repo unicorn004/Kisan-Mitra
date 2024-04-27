@@ -71,6 +71,18 @@
     <p>Experience the rich aroma and exquisite taste of our premium Basmati rice. Grown in the fertile soils of the Himalayan foothills, our Basmati rice is renowned for its long grains, delicate texture, and unique fragrance. With its naturally fluffy texture and superior cooking properties, our Basmati rice is perfect for a wide range of culinary creations, from fragrant pilafs and biryanis to delectable rice puddings and salads.</p>
   </div>
   <hr>
+  <form method="POST">
+    {% csrf_token %}
+    {% for field in RiceForm %}
+    <div class=""form__group">
+    <label for="username">{{field.label}}</label>
+  {{field}}
+  </div>
+  {% endfor %}
+    {{ RiceForm.as_p }}
+
+    <button type="submit">Submit</button>
+  </form>
   <button id="togglePrice">Add Price & Quantity</button>
   <div class="price" id="price">
     <label for="wheatPrice">Enter Price:</label>

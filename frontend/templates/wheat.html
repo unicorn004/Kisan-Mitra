@@ -87,23 +87,6 @@
   </div>
 </div>
 
-<h1>Product List</h1>
-<ul>
-    {% for product in products %}
-        <li>
-            <a href="{% url 'product_detail' pk=product.pk %}">{{ product.name }}</a>
-            <p>Description: {{ product.description }}</p>
-            <p>Price: ${{ product.price }}</p>
-            <p>Category: {{ product.category }}</p>
-            <p>Quantity: {{ product.quantity }}</p>
-            <p>Weight: {{ product.weight }} kg</p>
-            <p>SKU: {{ product.sku }}</p>
-        </li>
-    {% empty %}
-        <li>No products available.</li>
-    {% endfor %}
-</ul>
-
 <script>
   document.getElementById("togglePrice").addEventListener("click", function() {
     var priceDiv = document.getElementById("price");
