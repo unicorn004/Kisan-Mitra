@@ -20,9 +20,9 @@ from . import views
 from django.urls import path, include
 
 # Customise admin headings
-admin.site.site_header = "ResumeHub Admin"
-admin.site.site_title = "ResumeHub Admin Portal"
-admin.site.index_title = "Welcome to ResumeHub Admin"
+admin.site.site_header = "KisanMitra Admin"
+admin.site.site_title = "KisanMitra Admin Portal"
+admin.site.index_title = "Welcome to KisanMitra Admin"
 
 
 urlpatterns = [
