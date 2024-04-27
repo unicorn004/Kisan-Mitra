@@ -7,6 +7,9 @@
             class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
           >
           <h1 class="h2">LeaderBoard</h1>
+        
+       
+   
             <div class="btn-toolbar mb-2 mb-md-0">
               <div class="btn-group me-2">
                 <button type="button" class="btn btn-sm btn-outline-secondary">
@@ -26,6 +29,9 @@
             </div>
           </div>
 
+
+          
+
           <canvas
             class="my-4 w-100"
             id="myChart"
@@ -34,10 +40,12 @@
             style="
               display: block;
               box-sizing: border-box;
-              height: 380px;
-              width: 900px;
+              height: 10px;
+              width: 100px;
             "
           ></canvas>
+       
+   
 
           <h2>Trending Plans</h2>
           <div class="table-responsive small">
@@ -62,7 +70,7 @@
                 </tr>
                 <tr>
                   <td>2</td>
-                  <td>Offline</td>
+                  <td>Online</td>
                   <td>Rice</td>
                   <td>30</td>
                   <td><button class="custom-button" onclick="window.location.href='/resumes/2'">Click Here</button></td>
@@ -101,6 +109,7 @@
         </main>
   
          <!-- Graphs -->
+      
     {% comment %} <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.1/dist/Chart.min.js"></script>
     <script>
       var ctx = document.getElementById("myChart");
