@@ -1,0 +1,123 @@
+{% extends 'boiler.html' %}
+{% block page_contents %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Schemes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: black;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .scheme {
+            background-color:#90EE90;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .scheme h2 {
+            color: #333;
+        }
+
+        .scheme p {
+            margin-bottom: 10px;
+        }
+
+        .scheme-details {
+            margin-left: 20px;
+        }
+
+        .apply-btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .apply-btn:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="scheme">
+        <h2>Central Sector Schemes</h2>
+        <div class="scheme-details">
+            <h3>1. Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)</h3>
+            <p><strong>Purpose:</strong> To supplement financial needs of land-holding farmers.</p>
+            <p><strong>Details:</strong> PM-KISAN transfers Rs. 6000/year in three installments via DBT to farmers.</p>
+            <p><strong>Impact:</strong> Rs. 2.81 lakh crores transferred to over 11 crore beneficiaries.</p>
+            <a href="#" class="apply-btn">Apply Now</a>
+        </div>
+
+        <div class="scheme-details">
+            <h3>2. Pradhan Mantri Kisan MaanDhan Yojana (PM-KMY)</h3>
+            <p><strong>Purpose:</strong> Provide security to vulnerable farmer families.</p>
+            <p><strong>Details:</strong> Contributory scheme with monthly subscriptions and pension benefits.</p>
+            <p><strong>Enrollment:</strong> 23.38 lakh farmers have enrolled.</p>
+            <a href="#" class="apply-btn">Apply Now</a>
+        </div>
+
+        <!-- Add apply button for each scheme -->
+        
+        <div class="scheme-details">
+            <h3>3. Pradhan Mantri Fasal Bima Yojana (PMFBY)</h3>
+            <p><strong>Purpose:</strong> Provide crop insurance cover to farmers.</p>
+            <p><strong>Details:</strong> Offers comprehensive risk cover against natural risks.</p>
+            <p><strong>Impact:</strong> 5549.40 lakh farmer applications insured; Rs. 150589.10 crore paid as claim.</p>
+            <a href="#" class="apply-btn">Apply Now</a>
+        </div>
+
+        <div class="scheme-details">
+            <h3>4. Modified Interest Subvention Scheme (MISS)</h3>
+            <p><strong>Purpose:</strong> Provide concessional agri-loans to farmers.</p>
+            <p><strong>Details:</strong> Interest rate of 7% per annum; additional subvention for prompt repayment.</p>
+            <p><strong>Impact:</strong> 465.42 lakh new KCC applications sanctioned with credit limit of Rs. 5,69,974 crore.</p>
+            <a href="#" class="apply-btn">Apply Now</a>
+        </div>
+
+        <div class="scheme-details">
+            <h3>5. Agriculture Infrastructure Fund (AIF)</h3>
+            <p><strong>Purpose:</strong> Address infrastructure gaps and mobilize investment in agriculture.</p>
+            <p><strong>Details:</strong> Rs. 1 Lakh Crore fund with interest subvention and credit guarantee support.</p>
+            <p><strong>Impact:</strong> Rs. 33.209 Crores sanctioned for 44,912 projects, mobilizing Rs. 56.471 Crores investment.</p>
+            <a href="#" class="apply-btn">Apply Now</a>
+        </div>
+
+        <div class="scheme-details">
+            <h3>6. Formation & Promotion of new 10,000 FPOs</h3>
+            <p><strong>Purpose:</strong> Promote and support Farmer Producer Organizations.</p>
+            <p><strong>Details:</strong> Financial assistance, equity grant, credit guarantee, and training support.</p>
+            <p><strong>Impact:</strong> Total 7,774 FPOs registered under the scheme.</p>
+            <a href="#" class="apply-btn">Apply Now</a>
+        </div>
+
+        <div class="scheme-details">
+            <h3>7. National beekeeping and Honey Mission (NBHM)</h3>
+            <p><strong>Purpose:</strong> Promote scientific beekeeping and honey production.</p>
+            <p><strong>Details:</strong> Approval of honeybees as 5th input for agriculture, establishment of testing labs, and online registration portal.</p>
+            <p><strong>Impact:</strong> 23 lakhs bee colonies registered; 160 projects sanctioned under NBHM.</p>
+            <a href="#" class="apply-btn">Apply Now</a>
+        </div>
+    </div>
+</body>
+
+</html>
+{% endblock %}

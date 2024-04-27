@@ -51,3 +51,6 @@ def bajra(request):
 
 def tomato(request):
     return render(request, 'tomato.html')
+
+def subsidy(request):
+    return render(request, 'subsidy.html')

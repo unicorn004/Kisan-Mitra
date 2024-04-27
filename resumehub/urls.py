@@ -62,4 +62,5 @@ urlpatterns = [
      path('sugar/', views.sugar, name='sugar'),
      path('bajra/', views.bajra, name='bajra'),
      path('tomato/', views.tomato, name='tomato'),
+     path('subsidy/', views.subsidy, name='subsidy'),
 ]
