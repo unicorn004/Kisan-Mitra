@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "companies",
     "qualities",
     "resumes",
+    "product",
     "widget_tweaks",
 ]
 
