@@ -56,7 +56,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "KisanMitra.urls"
+ROOT_URLCONF = "resumehub.urls"
 
 TEMPLATES = [
     {
@@ -76,7 +76,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "KisanMitra.wsgi.application"
+WSGI_APPLICATION = "resumehub.wsgi.application"
 
 
 # Database
