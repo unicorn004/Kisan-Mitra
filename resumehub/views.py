@@ -31,10 +31,23 @@ def create_profile(request):
 def estore(request):
     return render(request, 'estore.html')
 
-<<<<<<< HEAD
 def organicservice(request):
     return render(request, 'organicservice.html')
-=======
+
 def rice(request):
     return render(request, 'rice.html')
->>>>>>> a6dc3c4ac1c6baf2ddad441d4a5e7a44a9072df7
+
+def maize(request):
+    return render(request, 'maize.html')
+
+def wheat(request):
+    return render(request, 'wheat.html')
+
+def sugar(request):
+    return render(request, 'sugar.html')
+
+def bajra(request):
+    return render(request, 'bajra.html')
+
+def tomato(request):
+    return render(request, 'tomato.html')

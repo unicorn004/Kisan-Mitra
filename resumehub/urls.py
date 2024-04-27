@@ -56,5 +56,10 @@ urlpatterns = [
      path('rice/', views.rice, name='rice'),
     
     path('organicservice/', views.organicservice, name='organicservice'),
-    
+
+     path('maize/', views.maize, name='maize'),
+     path('wheat/', views.wheat, name='wheat'),
+     path('sugar/', views.sugar, name='sugar'),
+     path('bajra/', views.bajra, name='bajra'),
+     path('tomato/', views.tomato, name='tomato'),
 ]
