@@ -1,12 +1,7 @@
-{% extends 'boiler.html' %}
-{% block page_contents %}
-{% load static %}
 
-<title>Rice Image with Description, Price, and Quantity</title>
+<title>Maize Image with Description, Price, and Quantity</title>
 <style>
   body {
-    margin: 10;
-    padding: 10;
     font-family: Arial, sans-serif;
     background-color: black;
     color: #333;
@@ -62,13 +57,12 @@
   }
 </style>
 </head>
-<body>
 
 <div class="container">
-    <h1>Rice</h1>
-  <img src="https://www.nextechagrisolutions.com/blog/wp-content/uploads/2014/11/Rice-Parts.jpg" alt="Wheat">
+    <h1>Maize</h1>
+  <img src="https://www.mccormick.it/wp-content/uploads/2020/05/dati-aggiornati-sulla-produzione-di-mais-nel-mondo-853x480.jpg" alt="Wheat">
   <div class="description">
-    <p>Experience the rich aroma and exquisite taste of our premium Basmati rice. Grown in the fertile soils of the Himalayan foothills, our Basmati rice is renowned for its long grains, delicate texture, and unique fragrance. With its naturally fluffy texture and superior cooking properties, our Basmati rice is perfect for a wide range of culinary creations, from fragrant pilafs and biryanis to delectable rice puddings and salads.</p>
+    <p>Experience the taste of nature's bounty with our premium quality maize (corn), freshly harvested from the fertile fields of our trusted farmers. Maize is not just a staple food; it's a versatile ingredient that adds flavor and nutrition to a wide range of dishes. Whether you're preparing hearty soups, crispy cornbread, or deliciously grilled corn on the cob, our maize is the perfect choice for your culinary adventures.</p>
   </div>
   <hr>
   <button id="togglePrice">Add Price & Quantity</button>
@@ -107,7 +101,3 @@
   });
 </script>
 
-</body>
-</html>
-
-{%endblock%}
