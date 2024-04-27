@@ -1,0 +1,116 @@
+{% extends 'boiler.html' %}
+{% block page_contents %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KisanMitra Organic Services</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1, h2 {
+    text-align: center;
+    color: #4CAF50;
+  }
+  .service {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .service img {
+    float: left;
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .service h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  .service p {
+    margin-bottom: 0;
+    color: #666;
+  }
+  .buy-button {
+    float: right;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .buy-button:hover {
+    background-color: #45a049;
+  }
+  .info {
+    margin-top: 40px;
+  }
+  .custom-image {
+    width: 200px; /* New width */
+    height: 150px; /* New height */
+  }
+  
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Welcome to KisanMitra Organic Services</h1>
+  
+  <div class="service" >
+    <img src="https://bharatvarshnaturefarms.com/wp-content/uploads/2022/12/Fruits-580x420-1.jpeg" alt="Organic Fruits"  class="custom-image">
+    <h2>Organic Fruits</h2>
+    <p>Organic fruits are grown using natural methods without the use of synthetic pesticides, herbicides, or fertilizers. Our selection of organic fruits includes a variety of delicious options such as apples, bananas, oranges, strawberries, and blueberries.</p>
+    <button class="buy-button">Buy Now</button>
+  </div>
+  
+  <div class="service" >
+    <img src="https://liveorganic.co.in/cdn/shop/collections/Fresh-Produce-1_1024x1024.jpg?v=1658572360" alt="Organic Vegetables" class="custom-image">
+    <h2>Organic Vegetables</h2>
+    <p>Our organic vegetables are cultivated using environmentally friendly farming practices that prioritize soil health and biodiversity. We offer a diverse range of organic vegetables, including spinach, kale, lettuce, carrots, tomatoes, and cucumbers.  </p>
+    <button class="buy-button">Buy Now</button>
+  </div>
+
+  <div class="info">
+    <h2>Organic Farming Practices</h2>
+    <p>Our organic farming practices include the use of natural fertilizers, crop rotation, composting, and biological pest control methods. We prioritize soil health and biodiversity to produce high-quality organic products.</p>
+  </div>
+
+  <div class="info">
+    <h2>Certification Standards</h2>
+    <p>We adhere to internationally recognized organic certification standards such as USDA Organic, EU Organic, and India Organic. These standards ensure that our products are grown and processed according to strict guidelines without the use of synthetic pesticides, herbicides, or genetically modified organisms (GMOs).</p>
+  </div>
+
+  <div class="info">
+    <h2>Sustainability</h2>
+    <p>At KisanMitra, sustainability is at the core of our practices. We aim to minimize our environmental impact by promoting biodiversity, conserving water resources, reducing carbon emissions, and supporting local communities. By choosing organic products, you contribute to a healthier planet and support sustainable agriculture.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+
+{% endblock %}

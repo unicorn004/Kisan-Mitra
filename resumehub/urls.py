@@ -53,4 +53,6 @@ urlpatterns = [
 
     path('estore/', views.estore, name='estore'),
     
+    path('organicservice/', views.organicservice, name='organicservice'),
+    
 ]

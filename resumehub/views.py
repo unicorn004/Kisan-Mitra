@@ -30,3 +30,6 @@ def create_profile(request):
 
 def estore(request):
     return render(request, 'estore.html')
+
+def organicservice(request):
+    return render(request, 'organicservice.html')
