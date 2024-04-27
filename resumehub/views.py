@@ -29,4 +29,4 @@ def create_profile(request):
     return render(request, 'profiles/create_profile.html')
 
 def estore(request):
-    return render(request, 'dashboard/estore.html')
+    return render(request, 'estore.html')
