@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wheat Image with Description, Price, and Quantity</title>
+<style>
+  body {
+    margin: 10;
+    padding: 10;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #333;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: white;
+    box-shadow: blue;
+    border-radius: 10px;
+    padding: 30px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .description {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .description p:last-child {
+    margin-bottom: 0;
+  }
+
+  .price {
+    display: none;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #007bff;
+  }
+
+  /* Decoration Styles */
+  #togglePrice {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #togglePrice:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="https://www.nextechagrisolutions.com/blog/wp-content/uploads/2014/11/Rice-Parts.jpg" alt="Wheat">
+  <div class="description">
+    <p>Experience the rich aroma and exquisite taste of our premium Basmati rice. Grown in the fertile soils of the Himalayan foothills, our Basmati rice is renowned for its long grains, delicate texture, and unique fragrance. With its naturally fluffy texture and superior cooking properties, our Basmati rice is perfect for a wide range of culinary creations, from fragrant pilafs and biryanis to delectable rice puddings and salads.</p>
+  </div>
+  <hr>
+  <button id="togglePrice">Add Price & Quantity</button>
+  <div class="price" id="price">
+    <label for="wheatPrice">Enter Price:</label>
+    <input type="text" id="wheatPrice" placeholder="Enter price...">
+    <br>
+    <label for="wheatQuantity">Enter Quantity:</label>
+    <input type="text" id="wheatQuantity" placeholder="Enter quantity...">
+    <br>
+    <button id="submitPrice">Submit</button>
+  </div>
+</div>
+
+<script>
+  document.getElementById("togglePrice").addEventListener("click", function() {
+    var priceDiv = document.getElementById("price");
+    if (priceDiv.style.display === "none" || priceDiv.style.display === "") {
+      priceDiv.style.display = "block";
+      document.getElementById("togglePrice").textContent = "Hide Price & Quantity";
+    } else {
+      priceDiv.style.display = "none";
+      document.getElementById("togglePrice").textContent = "Add Price & Quantity";
+    }
+  });
+  
+  document.getElementById("submitPrice").addEventListener("click", function() {
+    var priceInput = document.getElementById("wheatPrice").value;
+    var quantityInput = document.getElementById("wheatQuantity").value;
+    var priceDiv = document.getElementById("price");
+    priceDiv.style.display = "none";
+    document.getElementById("togglePrice").textContent = "Add Price & Quantity";
+    document.getElementById("wheatPrice").value = "";
+    document.getElementById("wheatQuantity").value = "";
+    alert("Price submitted: " + priceInput + "\nQuantity submitted: " + quantityInput);
+  });
+</script>
+
+</body>
+</html>
+
