@@ -52,6 +52,8 @@ urlpatterns = [
     path('create_profile/', views.create_profile, name='create_profile'),
 
     path('estore/', views.estore, name='estore'),
+
+     path('rice/', views.rice, name='rice'),
     
     path('organicservice/', views.organicservice, name='organicservice'),
     
