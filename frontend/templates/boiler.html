@@ -197,6 +197,62 @@
           position: fixed; /* Position the sidebar fixed to the viewport */
           height : 100%;
         }
+          body {
+            margin: 10;
+            padding: 10;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: #333;
+          }
+        
+          .container {
+            max-width: 600px;
+            margin: 50px auto;
+            text-align: center;
+            background-color: white;
+            box-shadow: blue;
+            border-radius: 10px;
+            padding: 30px;
+          }
+        
+          img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          }
+        
+          .description {
+            font-size: 18px;
+            line-height: 1.6;
+          }
+        
+          .description p:last-child {
+            margin-bottom: 0;
+          }
+        
+          .price {
+            display: none;
+            margin-top: 20px;
+            font-size: 24px;
+            color: #007bff;
+          }
+        
+          /* Decoration Styles */
+          #togglePrice {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          }
+        
+          #togglePrice:hover {
+            background-color: #0056b3;
+          }
     </style>
 
     <!-- Custom styles for this template -->

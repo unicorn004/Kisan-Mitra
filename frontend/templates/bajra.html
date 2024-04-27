@@ -1,0 +1,95 @@
+  <title>Bajra Image with Description, Price, and Quantity</title>
+  <style>
+    body {
+      margin: 10px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: #333;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      text-align: center;
+      background-color: white;
+      box-shadow: blue;
+      border-radius: 10px;
+      padding: 30px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .description {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .description p:last-child {
+      margin-bottom: 0;
+    }
+    .price {
+      display: none;
+      margin-top: 20px;
+      font-size: 24px;
+      color: #007bff;
+    }
+    /* Decoration Styles */
+    .togglePrice {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .togglePrice:hover {
+      background-color: #0056b3;
+    }
+  </style>
+      
+  <div class="container">
+    <h1>Bajra</h1>
+    <img src="https://images.hindustantimes.com/img/2022/07/28/550x309/c40a06f2-0eb8-11ed-a1d6-b1f7c7e6fb11_1659042334933.jpg" alt="Wheat">
+    <div class="description">
+      <p>Discover the wholesome goodness of our organic Bajra grain, also known as Pearl Millet. Sourced from certified organic farms and cultivated with care, our Bajra grain is a nutritious addition to your pantry. Packed with essential nutrients, including iron, magnesium, and fiber, Bajra is a versatile grain that can be used in a variety of culinary creations. From traditional Indian rotis and porridges to modern salads and desserts, Bajra adds a nutty flavor and hearty texture to any dish.</p>
+    </div>
+    <hr>
+    <button class="togglePrice">Add Price & Quantity</button>
+    <div class="price">
+      <label for="bajraPrice">Enter Price:</label>
+      <input type="text" id="bajraPrice" placeholder="Enter price...">
+      <br>
+      <label for="bajraQuantity">Enter Quantity:</label>
+      <input type="text" id="bajraQuantity" placeholder="Enter quantity...">
+      <br>
+      <button class="submitPrice">Submit</button>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector(".togglePrice").addEventListener("click", function() {
+      var priceDiv = document.querySelector(".price");
+      if (priceDiv.style.display === "none" || priceDiv.style.display === "") {
+        priceDiv.style.display = "block";
+        document.querySelector(".togglePrice").textContent = "Hide Price & Quantity";
+      } else {
+        priceDiv.style.display = "none";
+        document.querySelector(".togglePrice").textContent = "Add Price & Quantity";
+      }
+    });
+
+    document.querySelector(".submitPrice").addEventListener("click", function() {
+      var priceInput = document.getElementById("bajraPrice").value;
+      var quantityInput = document.getElementById("bajraQuantity").value;
+      var priceDiv = document.querySelector(".price");
+      priceDiv.style.display = "none";
+      document.querySelector(".togglePrice").textContent = "Add Price & Quantity";
+      document.getElementById("bajraPrice").value = "";
+      document.getElementById("bajraQuantity").value = "";
+      alert("Price submitted: " + priceInput + "\nQuantity submitted: " + quantityInput);
+    });
+  </script>
