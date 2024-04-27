@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     "qualities",
     "resumes",
     "widget_tweaks",
+    "government",
+    "product"
 ]
 
 MIDDLEWARE = [
